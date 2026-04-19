@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim de Ocorrência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Boletim de Ocorrência Escolar</h1>
+        <p>Uso exclusivo de professores</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="formulario">
+                <h2>Registrar Ocorrência</h2>
+
+                <form>
+                    <label for="professor">Professor:</label>
+                    <input type="text" id="professor" placeholder="Seu nome">
+
+                    <label>Aluno:</label>
+                    <input type="text" placeholder="Nome do aluno">
+
+                    <label>Tipo:<br></label>
+                    <select>
+                        <option>Indisciplina</option>
+                        <option>Violência</option>
+                        <option>Bullying</option>
+                        <option>Encaminhamento ao Conselho Tutelar</option>
+                    </select>
+
+                    <label>Descrição:</label>
+                    <textarea rows="4" placeholder="Descreva o ocorrido"></textarea>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </section>
+
+            <section class="info">
+                <h2>Encaminhamento</h2>
+                <p>
+                    Ocorrências graves envolvendo alunos podem ser encaminhadas ao Conselho Tutelar automaticamente,
+                    conforme a legislação vigente.
+                </p>
+            </section>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

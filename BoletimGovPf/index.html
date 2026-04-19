@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Professores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Acesso Restrito</h2>
+    <p>Somente professores autorizados</p>
+
+    <form onsubmit="return login()">
+        <label>Usuário:</label>
+        <input type="text" id="usuario" required autocomplete="username" requered>
+
+        <label>Senha:</label>
+        <input type="password" id="senha" required autocomplete="current-password" requered>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p id="erro"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
